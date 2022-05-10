@@ -8,6 +8,7 @@ The RAM Page Handler is a virtual memory simulator. It manages page table operat
        The swapfile functions are all implemented in the swap.c file, along with bitmap functions to track free and used space in the swap file, and to move virtual pages between the swapfile and (simulated) physical memory. The swap_pagein and swap_pageout functions take a frame number and a swap offset as arguments. The simulator code creates a temporary file in the current directory where it is executed to use as the swapfile, and removes this file as part of the cleanup when it completes.    
 <br/><br/>
 2. Implement 4 different page replacement algorithms: FIFO, LRU, Clock, OPT (remove the file that has not been used for the longest time). <br/>
-The 4 page replacement algorithms were compared and analyzed on its performance as shown below. <br/> <br/>
+The 4 page replacement algorithms were compared and analyzed on its performance as shown below. <br/><br/>
+
 ![Quote](https://github.com/kannikakabilar/RAM-Page-Handler/blob/main/analysis_shot.png)
     
